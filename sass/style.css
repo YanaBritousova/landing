@@ -1,1 +1,54 @@
-/*# sourceMappingURL=style.css.map */
+* {
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+@font-face {
+  font-family: "Proxima Nova Extra Condensed";
+  src: local("Proxima Nova Extra Condensed Regular"), local("Proxima-Nova-Extra-Condensed-Regular"), url("../fonts/ProximaNovaExCn-Regular.woff2") format("woff2"), url("../fonts/ProximaNovaExCn-Regular.woff") format("woff"), url("../fonts/ProximaNovaExCn-Regular.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+body {
+  font-family: "Proxima Nova Extra Condensed", sans-serif;
+}
+
+.navbar-wrap {
+  display: flex;
+  align-items: center;
+  min-height: 80px;
+}
+.navbar-menu__button {
+  margin: 30px;
+}
+
+.menu-button {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: transparent;
+  border: none;
+  border-right: 1px solid rgba(0, 128, 0, 0.1);
+  border-left: 1px solid rgba(0, 128, 0, 0.1);
+  height: 80px;
+  width: 70px;
+}
+.menu-button-line {
+  display: block;
+  margin: 3px 0;
+  width: 20px;
+  height: 2px;
+  background-color: blue;
+}
+
+.logo_text {
+  display: block;
+  font-family: "Proxima Nova Extra Condensed", sans-serif;
+  font-size: 18px;
+  text-transform: uppercase;
+}/*# sourceMappingURL=style.css.map */
