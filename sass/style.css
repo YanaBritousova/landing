@@ -15,17 +15,73 @@
 }
 body {
   font-family: "Proxima Nova Extra Condensed", sans-serif;
+  color: #262626;
 }
 
+.button-o {
+  border: 2px solid blue;
+  text-transform: uppercase;
+  padding: 17px 22px;
+  font-size: 10px;
+  background-color: white;
+  color: blue;
+}
+
+.button {
+  text-transform: uppercase;
+  padding: 25px 45px;
+  border: none;
+  background: blue;
+  color: white;
+  margin-left: 60px;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+}
 .navbar-wrap {
   display: flex;
+  justify-content: space-between;
   align-items: center;
   min-height: 80px;
 }
 .navbar-menu__button {
   margin: 30px;
 }
+.navbar_mobile, .navbar_landline {
+  text-align: right;
+}
+.navbar_phone {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 19px;
+  font-family: "Proxima Nova Extra Condensed", sans-serif;
+  color: #262626;
+  text-decoration: none;
+}
 
+.menu {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 110px;
+  padding: 20px 0;
+  background-color: blue;
+}
+.menu-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+.menu_link {
+  text-decoration: none;
+  font-size: 17px;
+  text-transform: uppercase;
+  color: white;
+}
 .menu-button {
   display: flex;
   flex-direction: column;
@@ -49,6 +105,34 @@ body {
 .logo_text {
   display: block;
   font-family: "Proxima Nova Extra Condensed", sans-serif;
-  font-size: 18px;
+  font-size: 30px;
   text-transform: uppercase;
+}
+.logo_description {
+  display: block;
+  font-size: 14px;
+  color: #7b7b79;
+  text-decoration: none;
+}
+
+.hero {
+  background: url("../img/hero/astro.jpeg") no-repeat center top 80px;
+  background-size: contain;
+  padding-top: 260px;
+  padding-bottom: 270px;
+}
+.hero_title {
+  font-size: 30px;
+  margin-bottom: 50px;
+  margin-left: 35px;
+}
+.hero_subtitle {
+  display: block;
+  font-size: 30px;
+  font-family: "Proxima Nova Extra Condensed", sans-serif;
+  margin-left: 35px;
+  margin-bottom: 110px;
+}
+.hero_button {
+  margin-left: 35px;
 }/*# sourceMappingURL=style.css.map */
