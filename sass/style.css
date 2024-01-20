@@ -5,6 +5,7 @@
 .container {
   max-width: 1170px;
   margin: auto;
+  padding: 0 20px;
 }
 
 @font-face {
@@ -36,17 +37,23 @@ body {
   margin-left: 60px;
 }
 
+@media (max-width: 576px) {
+  .button-o {
+    font-size: 8px;
+  }
+}
 .navbar {
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;
+  background-color: white;
+  z-index: 99;
 }
 .navbar-wrap {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  min-height: 80px;
 }
 .navbar-menu__button {
   margin: 30px;
@@ -65,11 +72,17 @@ body {
 
 .menu {
   position: fixed;
+  z-index: 0;
   width: 100%;
   left: 0;
-  top: 110px;
+  top: 130px;
   padding: 20px 0;
   background-color: blue;
+  transition: 0.2s;
+  transform: translateY(-100%);
+}
+.menu_active {
+  transform: translateY(0);
 }
 .menu-nav {
   display: flex;
@@ -115,6 +128,19 @@ body {
   text-decoration: none;
 }
 
+@media (max-width: 992px) {
+  .navbar_mobile, .navbar_landline {
+    display: none;
+  }
+}
+@media (max-width: 576px) {
+  .logo {
+    display: none;
+  }
+  .menu-button {
+    height: 60px;
+  }
+}
 .hero {
   background: url("../img/hero/astro.jpeg") no-repeat center top 80px;
   background-size: contain;
@@ -135,4 +161,11 @@ body {
 }
 .hero_button {
   margin-left: 35px;
+}
+
+@media (max-width: 992px) {
+  .hero {
+    background-size: cover;
+    background-position: top left 50%;
+  }
 }/*# sourceMappingURL=style.css.map */
